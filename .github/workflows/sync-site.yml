@@ -1,0 +1,53 @@
+name: Sync review site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout s2
+        uses: actions/checkout@v4
+
+      - name: Preserve current presentation
+        run: cp index.html /tmp/current-index.html
+
+      - name: Copy complete site baseline from s1
+        run: |
+          git clone --depth=1 https://github.com/Reema4r/s1.git /tmp/s1
+          rsync -a --delete --exclude='.git' --exclude='.github' --exclude='index.html' /tmp/s1/ ./
+          cp /tmp/current-index.html index.html
+
+      - name: Match logo artwork to current review build
+        run: |
+          python -m pip install --quiet pillow
+          python - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          p=Path('assets/east-coast/logo-showcase.png')
+          im=Image.open(p).convert('RGB')
+          target_w,target_h=1672,941
+          scale=target_w/im.width
+          resized=im.resize((target_w, round(im.height*scale)), Image.Resampling.LANCZOS)
+          top=max(0,(resized.height-target_h)//2)
+          wide=resized.crop((0,top,target_w,top+target_h))
+          wide.save(p,quality=95)
+          PY
+
+      - name: Commit synced files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "Sync complete review site"
+          git push
