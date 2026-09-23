@@ -1,0 +1,30 @@
+{
+  "base": "work_latest_dashboard / latest logo build",
+  "checks": {
+    "js_syntax_errors": 0,
+    "duplicate_ids": [
+      "nationalitySegment",
+      "professionChoices",
+      "calcProfession",
+      "calcCity",
+      "calcSelectedFlag",
+      "priceSingle",
+      "calcSummaryProfession",
+      "calcSummaryCity",
+      "calcDuration",
+      "calcSalary",
+      "cv-doc-${w.id}",
+      "cvPrintFrame",
+      "${w.id}",
+      "compact-cv-${w.id}",
+      "links"
+    ],
+    "journey_adaptive": true,
+    "reviews_no_repeat": true,
+    "footer_phone_address_jobs_complaint_bound": true,
+    "price_offer_editable": true,
+    "admin_pdf_preview_fixed": true,
+    "representatives_direct_visibility": true,
+    "footer_social_under_logo": true
+  }
+}

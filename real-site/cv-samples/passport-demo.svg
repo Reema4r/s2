@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="1120" viewBox="0 0 820 1120">
+  <defs>
+    <linearGradient id="paperTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f7df"/><stop offset=".55" stop-color="#e8f5e9"/><stop offset="1" stop-color="#e6f0f6"/>
+    </linearGradient>
+    <linearGradient id="paperBottom" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef5ef"/><stop offset=".55" stop-color="#f7f8df"/><stop offset="1" stop-color="#dfeef3"/>
+    </linearGradient>
+    <pattern id="wave" width="54" height="54" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+      <path d="M0 27C12 14 26 40 54 27" fill="none" stroke="#1f7d86" stroke-opacity=".10" stroke-width="2"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#173b49" flood-opacity=".16"/></filter>
+  </defs>
+  <rect width="820" height="1120" fill="#f4f7f8"/>
+  <g filter="url(#shadow)">
+    <rect x="105" y="62" width="610" height="485" rx="18" fill="url(#paperTop)" stroke="#9cbfc3" stroke-width="2"/>
+    <rect x="105" y="555" width="610" height="503" rx="18" fill="url(#paperBottom)" stroke="#9cbfc3" stroke-width="2"/>
+  </g>
+  <rect x="105" y="62" width="610" height="485" rx="18" fill="url(#wave)"/>
+  <rect x="105" y="555" width="610" height="503" rx="18" fill="url(#wave)"/>
+  <line x1="120" y1="551" x2="700" y2="551" stroke="#789ea5" stroke-width="3" opacity=".55"/>
+
+  <g font-family="Arial, sans-serif" fill="#173b49">
+    <text x="135" y="108" font-size="21" font-weight="700">DESCRIPTION / SAMPLE PAGE</text>
+    <text x="135" y="138" font-size="14" fill="#55747d">صفحة وصف تجريبية — بيانات غير حقيقية</text>
+    <text x="135" y="195" font-size="13" fill="#60777f">Name / الاسم</text><text x="135" y="222" font-size="20" font-weight="700">DEMO HOLDER</text>
+    <text x="135" y="267" font-size="13" fill="#60777f">Height / الطول</text><text x="135" y="293" font-size="18">1.63 m</text>
+    <text x="335" y="267" font-size="13" fill="#60777f">Eye colour / لون العين</text><text x="335" y="293" font-size="18">BROWN</text>
+    <text x="135" y="338" font-size="13" fill="#60777f">Profession / المهنة</text><text x="135" y="364" font-size="18">SAMPLE ONLY</text>
+    <text x="135" y="409" font-size="13" fill="#60777f">Special marks / علامات مميزة</text><text x="135" y="435" font-size="18">NONE</text>
+  </g>
+  <g transform="translate(535 160)" opacity=".55">
+    <circle cx="70" cy="70" r="58" fill="none" stroke="#088395" stroke-width="7"/>
+    <circle cx="70" cy="54" r="21" fill="#7ab2b2"/>
+    <path d="M30 116c8-31 25-45 40-45s32 14 40 45" fill="#7ab2b2"/>
+  </g>
+
+  <g font-family="Arial, sans-serif" fill="#173b49">
+    <text x="135" y="602" font-size="22" font-weight="700">DEMO REPUBLIC / SAMPLE PASSPORT</text>
+    <text x="135" y="632" font-size="14" fill="#55747d">جواز تجريبي — غير صالح للاستخدام أو التحقق</text>
+  </g>
+  <g transform="translate(140 672)">
+    <rect width="170" height="210" rx="12" fill="#dcebed" stroke="#b9d3d8"/>
+    <circle cx="85" cy="73" r="38" fill="#9fc1c7"/>
+    <path d="M34 187c10-50 34-74 51-74s41 24 51 74" fill="#9fc1c7"/>
+  </g>
+  <g font-family="Arial, sans-serif" fill="#173b49">
+    <text x="340" y="685" font-size="12" fill="#60777f">Surname / اللقب</text><text x="340" y="710" font-size="18" font-weight="700">SAMPLE</text>
+    <text x="340" y="748" font-size="12" fill="#60777f">Given names / الاسم</text><text x="340" y="773" font-size="18" font-weight="700">DEMO HOLDER</text>
+    <text x="340" y="811" font-size="12" fill="#60777f">Nationality / الجنسية</text><text x="340" y="836" font-size="17">DEMO</text>
+    <text x="535" y="811" font-size="12" fill="#60777f">Sex / الجنس</text><text x="535" y="836" font-size="17">F</text>
+    <text x="340" y="874" font-size="12" fill="#60777f">Passport No. / رقم الجواز</text><text x="340" y="899" font-size="18" font-weight="700">DEMO0000</text>
+    <text x="535" y="874" font-size="12" fill="#60777f">DOB / الميلاد</text><text x="535" y="899" font-size="16">01 JAN 2000</text>
+    <text x="140" y="928" font-size="12" fill="#60777f">Issue / الإصدار</text><text x="140" y="951" font-size="16">01 JAN 2026</text>
+    <text x="340" y="928" font-size="12" fill="#60777f">Expiry / الانتهاء</text><text x="340" y="951" font-size="16">01 JAN 2036</text>
+  </g>
+  <rect x="135" y="978" width="550" height="54" rx="8" fill="#fff" fill-opacity=".52" stroke="#b8d2d6"/>
+  <g font-family="monospace" fill="#173b49" font-size="15">
+    <text x="150" y="1001">P&lt;DEMO&lt;&lt;SAMPLE&lt;HOLDER&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</text>
+    <text x="150" y="1022">DEMO0000&lt;0DEM0000000X3601010&lt;&lt;&lt;&lt;&lt;&lt;&lt;00</text>
+  </g>
+  <g transform="rotate(-25 410 560)" font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="410" y="540" font-size="78" font-weight="800" fill="#b33f49" fill-opacity=".16">DEMO</text>
+    <text x="410" y="590" font-size="24" font-weight="700" fill="#b33f49" fill-opacity=".48">NOT VALID • نموذج غير صالح</text>
+  </g>
+</svg>

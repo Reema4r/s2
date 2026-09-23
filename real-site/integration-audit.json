@@ -1,0 +1,76 @@
+{
+  "stable_nonindex_assets_unchanged": {
+    "ok": true,
+    "changed": []
+  },
+  "duplicate_ids": {
+    "ok": true,
+    "duplicates": []
+  },
+  "javascript_syntax": {
+    "ok": true,
+    "inline_scripts": 68,
+    "errors": []
+  },
+  "local_assets": {
+    "ok": true,
+    "literal_refs": 52,
+    "missing": []
+  },
+  "public_service_routes": {
+    "ok": true,
+    "services": [
+      {
+        "label": "الاستقدام",
+        "onclick": "document.querySelector('#prices').scrollIntoView({behavior:'smooth'})",
+        "data_support": false,
+        "data_policy": null
+      },
+      {
+        "label": "استلام فوري",
+        "onclick": "profileFilter='available';profilePage=0;renderProfiles();document.querySelector('#profiles').scrollIntoView({behavior:'smooth'})",
+        "data_support": false,
+        "data_policy": null
+      },
+      {
+        "label": "نقل الخدمات",
+        "onclick": "openContactForm('نقل خدمات')",
+        "data_support": false,
+        "data_policy": null
+      },
+      {
+        "label": "خدمات التأجير",
+        "onclick": "openContactForm('خدمة التأجير')",
+        "data_support": false,
+        "data_policy": null
+      },
+      {
+        "label": "تمديد العقود",
+        "onclick": "openContactForm('تمديد العقود')",
+        "data_support": false,
+        "data_policy": null
+      }
+    ]
+  },
+  "cms_service_routes": {
+    "ok": true
+  },
+  "destination_visibility_coupling": {
+    "ok": true
+  },
+  "top_level_modal_close_routing": {
+    "ok": true
+  },
+  "contact_extension_preselect": {
+    "ok": true
+  },
+  "resource_routes": {
+    "ok": true
+  },
+  "single_document_structure": {
+    "ok": true,
+    "body_elements": 1,
+    "html_elements": 1
+  },
+  "overall": true
+}
